@@ -1,106 +1,51 @@
 <!DOCTYPE html>
 <html>
-    <!--Head-->
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width" />
-        <title>Phil Hamilton</title>
-        <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css">
-    </head>
+<!--Head-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Hamilton Software</title>
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <script src="./scripts/main.js" async></script>
+</head>
 
-    <!--Body-->
-    <body class="Background">
-        
-        <!--Navbar-->
-        <div class="Navbar">
-            <a class="active" href="#Home">Home</a>
-            <a href="#About">About</a>
-            <a href="#GitHub">GitHub</a>
-            <a href="#Contact">Contact</a>
+<!--Body-->
+<body class="Background">
+
+    <!--Headshot-->
+    <div class="Center">
+        <img class="Photo" src="./styles/images/headshot.jfif" alt="Profile Photo" />
+    </div>
+    <!--Name text-->
+    <div class="Name_Text Center">
+        <h1>Phil Hamilton</h1>
+        <!--<p>Software Developer</p>-->
+    </div>
+
+    <div class="Center">
+        <a href="#Contact" class="Contact_Button">Contact</a>
+        <div class="Center">
+            <a href="#Contact">
+                <img class="Arrow" src="./styles/images/slim_down_arrow.png" />
+            </a>
         </div>
+    </div>
 
-        <!--Breaks inserted to add space between navbar and the first heading-->
-        <br id="Home">
+    <!--About section-->
+    <div id="About">
+
+    </div>
+
+    <!--Contact section-->
+    <div id="Contact">
+
+    </div>
+
+    <!--Footer section-->
+    <footer>
+        <p>Contact Me * Github</p>
         <br>
+    </footer>
+</body>
 
-        <!--Background video-->
-        <div >
-            <video autoplay muted loop id="Typing_Video">
-                <source src="images/video/Typing.mp4" type="video/mp4">
-                <!--Display message if video fails to run-->
-                Your browser does not support HTML5 video.
-            </video>
-        </div>
-
-        <!--Video text-->
-        <div class="Video_Text">
-            <h1 class="white-text">Phil Hamilton</h1>
-        </div>
-
-        <!--About section-->
-        <div class="Row" id="About">
-            <!--Left column-->
-            <div class="Column_2">
-                <img src="images/about.jpg" alt="About_Image">
-            </div>
-            <!--Right column-->
-            <div class="Column_1">
-                <h1>About</h1>
-                <p>
-                    I am an aspiring software developer. I love solving problems, spending time with my family, and playing chess and ultimate frisbee &#129359;
-                    <br>
-                    <br>I am (or will soon be) a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy’s</a> C# and .NET Developer Boot Camp, and am proficient in JavaScript, C#, SQL and more.
-                    <br>
-                    <br>For more information, or if you would like to get in touch, please <a href="#Contact">contact me</a>.
-                </p>
-            </div>
-        </div>
-
-        <!--GitHub section-->
-        <div class="Row" id="GitHub">
-            <!--Left column-->
-            <div class="Column_1">
-                <h1>GitHub</h1>
-                <p>
-                    You can view my coding projects on my GitHub profile here:
-                    <br>
-                    <p class="center"><a href="https://github.com/rajhah" target="_blank">Phil Hamilton Github</a></p>
-                </p>
-            </div>
-            <!--Right column-->
-            <div class="Column_2">
-                <a href="https://github.com/rajhah" target="_blank"><img style="filter:grayscale(0%);" src="images/github.png" alt="GitHub Logo"></a>
-            </div>
-        </div>
-
-        <!--Contact section-->
-        <div class="Row" id="Contact">
-            <!--Contact image, left column-->
-            <div class="Column_2 Column_tall">
-                <img src="images/contact.jpg" alt="Contact_Image">
-            </div>
-            <!--Contact form, right column-->
-            <div class="Column_1 Column_tall">
-                <h1>Contact</h1>
-                <!--This specifies where and how to send the form data; we are leaving it blank-->
-                <form action="" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
-                    <label>Name:</label>
-                        <input type="text" placeholder="Please enter your name here">
-                    <label>Email:</label>
-                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                    <label>Message:</label>
-                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                        <input type="submit" value="SUBMIT">
-                </form>
-            </div>
-        </div>
-
-        <!--Footer section-->
-        <footer>
-            <p>
-                <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
-                <br>
-            </p>
-        </footer>
-    </body>
 </html>
