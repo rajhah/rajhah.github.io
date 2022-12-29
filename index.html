@@ -6,45 +6,75 @@
     <meta name="viewport" content="width=device-width" />
     <title>Hamilton Software</title>
     <link rel="stylesheet" type="text/css" href="./styles/main.css">
-    <script src="./scripts/main.js" async></script>
+    <script src="./scripts/main.js" defer></script>
 </head>
 
 <!--Body-->
 <body class="Background">
-
-    <!--Headshot-->
-    <div class="Center">
-        <img class="Photo" src="./styles/images/headshot.jfif" alt="Profile Photo" />
-    </div>
-    <!--Name text-->
-    <div class="Name_Text Center">
-        <h1>Phil Hamilton</h1>
-        <!--<p>Software Developer</p>-->
-    </div>
-
-    <div class="Center">
-        <a href="#Contact" class="Contact_Button">Contact</a>
+    <div id="Main-Content">
+        <!--Headshot-->
         <div class="Center">
-            <a href="#Contact">
-                <img class="Arrow" src="./styles/images/slim_down_arrow.png" />
-            </a>
+            <img id="Headshot" class="Photo" src="./styles/images/headshot.jfif" alt="Profile Photo" />
         </div>
-    </div>
+        <!--Name text-->
+        <div class="Name_Text Center">
+            <h1>Phil Hamilton</h1>
+            <!--<p>Software Developer</p>-->
+        </div>
 
-    <!--About section-->
-    <div id="About">
+        <div class="Center">
+            <a href="#Contact" class="Contact_Button">Contact</a>
+            <div class="Center">
+                <a href="#Contact">
+                    <img class="Arrow" src="./styles/images/slim_down_arrow.png" />
+                </a>
+            </div>
+        </div>
 
-    </div>
+        <!--About section-->
+        <div id="About">
+            <h1>ABOUT</h1>
+            <p class="Center" style="text-align:left">
+                Hi! My name is Phil Hamilton and I am a software developer with a passion for solving complex problems. I am trained and proficient in C# and JavaScript, and am always eager to learn more and acquire new skills.
+                <br />
+                <br />
+                I am a recent graduate of the <a href="https://www.learncodinganywhere.com/" target="_blank">Tech Academy's</a> C# and .NET developer bootcamp. During this course, I had the opportunity to create projects on my own and as a member of a team. You can find my coding portfolio <a href="https://github.com/rajhah" target="_blank">here</a>.
+                <br />
+                <br />
+                In my free time, you can find me studying chess openings, playing ultimate frisbee with my friends, or spending time with my family. I am always on the lookout for exciting new opportunities to learn and grow as a developer.
+            </p>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
 
-    <!--Contact section-->
-    <div id="Contact">
-
+        <!--Contact section-->
+        <div id="Contact" class="Center">
+            <div id="Form">
+                <div id="Contact-Title">
+                    Contact
+                </div>
+                <form action="" method="">
+                    <!-- action='/contact' method='post' -->
+                    <!--<label for="name">Name:</label><br>-->
+                    <input type="text" id="name" name="name" placeholder="Name"><br>
+                    <!--<label for="email">Email:</label><br>-->
+                    <input type="email" id="email" name="email" placeholder="Email" required><br>
+                    <!--<label for="message">Message:</label><br>-->
+                    <textarea id="message" name="message" placeholder="Message" required></textarea><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
     </div>
 
     <!--Footer section-->
     <footer>
-        <p>Contact Me * Github</p>
-        <br>
+        <a href="#Contact" style="color:white;">Contact Me</a> * <a href="https://github.com/rajhah/" target="_blank" style="color:white;">Github</a>
     </footer>
 </body>
 
